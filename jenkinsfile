@@ -13,7 +13,7 @@ pipeline {
                 sh echo "${params.language}"
                 echo "${params.language}"
                 // check parameter choice and then create index file 
-                sh ./script "${params.language}               
+                // sh ./script "${params.language}               
             }
         }
     }
