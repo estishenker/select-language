@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "------------------   $1"
+echo "parameter language is: ------------------   $1"
 case "$1" in
    "c") bash ./C > output
    ;;
