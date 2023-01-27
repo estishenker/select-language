@@ -1,15 +1,15 @@
 #!/bin/bash
 echo "parameter language is: ------------------   $1"
 case "$1" in
-   "c") bash ./C > output
+   "c") bash ./c > output
    ;;
-   "java") bash ./JAVA > output
+   "java") bash ./java > output
    ;;
-   "python") bash ./PYTHON > output
+   "python") bash ./python > output
    ;;
-   *) bash C > output
-      bash JAVA >> output
-      bash PYTHON >> output
+   *) bash c > output
+      bash java >> output
+      bash python >> output
    ;;
 esac
 cat output
