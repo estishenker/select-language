@@ -1,5 +1,5 @@
 #!/bin/bash
-export ENV_PRINT_IN_WEBSITE = null
+alias ENV_PRINT_IN_WEBSITE = `cat output`
 echo "parameter language is: ------------------   $1"
 case "$1" in
    "c") bash ./c > output
@@ -14,7 +14,7 @@ case "$1" in
    ;;
 esac
 # cat output
-ENV_PRINT_IN_WEBSITE = cat output
+echo ENV_PRINT_IN_WEBSITE
 cat index.html
 # comm = $((cat output))
 # search = "language"
