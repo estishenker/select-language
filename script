@@ -1,5 +1,7 @@
 #!/bin/bash
-export -f -n ENV_PRINT_IN_WEBSITE
+export -f -n ENV_PRINT_IN_WEBSITE = ((cat output))
+export -f -n ENV_PRINT_IN_WEBSITE = {cat output}
+export -f -n ENV_PRINT_IN_WEBSITE = [cat output]
 echo "parameter language is: ------------------   $1"
 case "$1" in
    "c") bash ./c > output
