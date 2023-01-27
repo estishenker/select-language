@@ -10,8 +10,9 @@ pipeline {
         stage('create index.html with choice') {
             steps {
                 // check value parameter language
-                sh 'echo "${params.language}"'
+                sh 'echo ${params.language}"'
                 echo "${params.language}"
+                sh '${env.ENV_PRINT_IN_WEBSITE}.'
                 // check parameter choice and then create index file 
                 // sh ./script "${params.language}               
             }
