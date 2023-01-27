@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    parameters {
+        choice(name: "language", choices: ["all", "java", "python", "c"], description: "select language to display")
+    }
+    environment {
+        ENV_PRINT_IN_WEBSITE = null
+    }
+    stages {
+        stage('create index.html with choice') {
+            steps {
+                echo "${params.language}" # check me
+                sh ./script "${params.language} # check parameter choice and then create index file                
+            }
+        }
+    }
+}
