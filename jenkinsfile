@@ -15,9 +15,11 @@ pipeline {
                     #!/bin/bash
                     echo "${params.language}"
                     echo "${env.ENV_PRINT_IN_WEBSIT}" 
+                
+                    # check parameter choice and then create index file
+                    chmod +x ./script
+                    ./script "${params.language}" 
                 """
-                // check parameter choice and then create index file
-                sh ' ./script "${params.language}" '              
             }
         }
     }
