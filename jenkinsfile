@@ -12,7 +12,7 @@ pipeline {
                 // check value parameter language
                 echo "${params.language}"
                 sh '''
-                    echo ${params.language}"
+                    echo ${params.language}
                     echo ${env.ENV_PRINT_IN_WEBSITE} 
                 '''
                 // check parameter choice and then create index file
