@@ -17,7 +17,7 @@ pipeline {
                     echo "${env.ENV_PRINT_IN_WEBSIT}" 
                 """
                 // check parameter choice and then create index file
-                sh ' ./script ${params.language} '              
+                sh ' ./script "${params.language}" '              
             }
         }
     }
