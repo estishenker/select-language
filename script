@@ -1,4 +1,5 @@
 #!/bin/bash
+export ENV_PRINT_IN_WEBSITE="null"
 export ENV_PRINT_IN_WEBSITE = "cat output"
 export ENV_PRINT_IN_WEBSITE = "((cat output))"
 # export -f -n ENV_PRINT_IN_WEBSITE = {cat output}
