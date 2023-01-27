@@ -13,8 +13,8 @@ case "$1" in
       bash python >> output
    ;;
 esac
-ENV_PRINT_IN_WEBSITE= $(cat output)
- 
+cat output
+ENV_PRINT_IN_WEBSITE= bash !$
 cat index.html
 # comm = $((cat output))
 # search = "language"
