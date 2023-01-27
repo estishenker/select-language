@@ -11,9 +11,10 @@ pipeline {
             steps {
                 // check value parameter language
                 echo "${params.language}"
-                sh '''#!/bin/bash
+                sh '''
+                    #!/bin/bash
                     echo "${params.language}"
-                    echo "${env.ENV_PRINT_IN_WEBSIT" 
+                    echo "${env.ENV_PRINT_IN_WEBSIT}" 
                 '''
                 // check parameter choice and then create index file
                 // sh ./script "${params.language}               
