@@ -1,5 +1,5 @@
 #!/bin/bash
-export -f -n ENV_PRINT_IN_WEBSITE = "null"
+export -f -n ENV_PRINT_IN_WEBSITE
 echo "parameter language is: ------------------   $1"
 case "$1" in
    "c") bash ./c > output
@@ -13,8 +13,8 @@ case "$1" in
       bash python >> output
    ;;
 esac
-cat output
-echo ENV_PRINT_IN_WEBSITE
+ENV_PRINT_IN_WEBSITE= $((cat output))
+ 
 cat index.html
 # comm = $((cat output))
 # search = "language"
