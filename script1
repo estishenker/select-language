@@ -22,9 +22,9 @@ echo '!DOCTYPE html>
     <p> "$(cat output.txt)" </p>
 </body>
 </html>
-'>index.html
+'>index
 echo "print after command_______________________________________"
-cat index.html
+cat index >index.html
 rm output.txt
 echo "FROM httpd:2.4" > Dockerfile
 echo "WORKDIR /my_app" >> Dockerfile
