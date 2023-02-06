@@ -19,10 +19,12 @@ echo '!DOCTYPE html>
     <title>"your choice" </title>
 </head>
 <body>
-    <p> "$(cat output.txt)" </p>
+    <p>'>index1.html
+ cat output.txt >>index1.html
+ echo '</p>
 </body>
 </html>
-'>index1.html
+'>>index1.html
 echo "print after command_______________________________________"
 cat index1.html >index.html
 rm output.txt
