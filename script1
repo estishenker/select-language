@@ -27,3 +27,6 @@ echo "print after command____________"
 cat index.html
 rm output.txt
 ls
+echo "FROM httpd:2.4" > Dockerfile
+echo "COPY . /usr/local/apache2/htdocs/" >> Dockerfile
+ls
