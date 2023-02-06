@@ -11,7 +11,7 @@ case "$1" in
       bash python >> output.txt
    ;;
 esac
-echo "!DOCTYPE html>
+echo '!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -22,7 +22,7 @@ echo "!DOCTYPE html>
     <p> "$(cat output.txt)" </p>
 </body>
 </html>
-">index.html
+'>index.html
 echo "print after command_______________________________________"
 cat index.html
 rm output.txt
