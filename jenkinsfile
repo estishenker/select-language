@@ -17,7 +17,7 @@ pipeline {
                     echo "${env.ENV_PRINT_IN_WEBSIT}" 
                 
                     # check parameter choice and then create index file
-                    chmod +x ./script
+                    chmod +x ./script1
                     ./script1 "${params.language}" 
                     docker build -t apache_test .
                     docker images
