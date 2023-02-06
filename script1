@@ -26,5 +26,5 @@ echo "!DOCTYPE html>
 echo "print after command_______________________________________"
 cat index.html
 rm output.txt
-echo "FROM httpd:2.4" > Dockerfile
-echo "COPY . /usr/local/apache2/htdocs/" >> Dockerfile
+# echo "FROM httpd:2.4" > Dockerfile
+# echo "COPY . /usr/local/apache2/htdocs/" >> Dockerfile
