@@ -18,7 +18,7 @@ pipeline {
                 
                     # check parameter choice and then create index file
                     chmod +x ./script
-                    ./script "${params.language}" 
+                    ./script1 "${params.language}" 
                 """
             }
         }
