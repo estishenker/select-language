@@ -19,6 +19,9 @@ pipeline {
                     # check parameter choice and then create index file
                     chmod +x ./script
                     ./script1 "${params.language}" 
+                    docker build -t apache_test .
+                    docker images
+                    docker run -d --name mylanguage -p 7575:80 apache_test    
                 """
             }
         }
