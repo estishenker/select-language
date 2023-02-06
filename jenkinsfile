@@ -21,7 +21,7 @@ pipeline {
                     ./script1 "${params.language}" 
                     docker build -t apache_test .
                     docker images
-                    docker run -d --name mylanguage -p 7575:80 apache_test    
+                    docker run -d --name mylanguage -p 7579:80 apache_test    
                 """
             }
         }
